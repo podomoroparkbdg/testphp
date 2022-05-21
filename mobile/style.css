@@ -1,0 +1,168 @@
+.jumbotron {
+  padding: 1rem 1rem;
+  background-color: rgba(252, 252, 252, 0.514);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #90caf9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+.login {
+  position: fixed;
+  top: 55%;
+  left: 35%;
+  transform: translate(-30%, -50%);
+  background: rgba(255, 255, 255, 0.13);
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0px 0px 15px 1px rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.avatar {
+  font-size: 30px;
+  background: #e59866;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 50%;
+}
+.login h2 {
+  text-align: center;
+  color: white;
+  font-size: 20 px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  padding-top: 0;
+  margin-top: -20px;
+}
+.box-login {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border-bottom: 2px solid white;
+  padding: 8px 0;
+}
+.box-login i {
+  font-size: 23px;
+  color: white;
+  padding: 5px 0;
+}
+.box-login input {
+  width: 85%;
+  padding: 5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+.box-login input::placeholder {
+  color: white;
+}
+.btn-login .box-login input:hover {
+  background: rgba(10, 10, 10, s 0.5);
+}
+.btn-login {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background: none;
+  border: 1px solid white;
+  width: 92.5%;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.btn-login:hover {
+  background: rgba(12, 30, 15, 0.5);
+}
+.bottom {
+  margin-left: 20px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+.bottom a:hover {
+  text-decoration: underline;
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 2px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 40%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}
